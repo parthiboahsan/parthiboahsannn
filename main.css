@@ -1,0 +1,397 @@
+        /* ============ Homepage Special Section (4-col, kept for backward compat) ============ */
+        .special-section-wrapper {
+            max-width: 1200px;
+            margin: 25px auto 0;
+            padding: 0 15px;
+        }
+        .special-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .special-header h2 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #111;
+            margin: 0;
+            position: relative;
+            padding-left: 12px;
+        }
+        .special-header h2::before {
+            content: '|';
+            position: absolute;
+            left: 0;
+            color: #ed1c24;
+            font-weight: 900;
+        }
+        .special-header .see-more-btn {
+            color: #ed1c24;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .special-header .see-more-btn:hover {
+            transform: translateX(5px);
+        }
+        .special-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .special-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform .3s, box-shadow .3s;
+        }
+        .special-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        .special-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+        .special-card-body {
+            padding: 12px;
+        }
+        .special-card-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            margin: 0;
+            color: #222;
+        }
+        .special-card-title a {
+            color: #222;
+        }
+        .special-card-title a:hover {
+            color: #ed1c24;
+        }
+
+        /* ============ 3-Column Category Boxes (New) ============ */
+        .special-3col-wrapper {
+            max-width: 1200px;
+            margin: 25px auto 0;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .special-3col-box {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .special-3col-header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .special-3col-header h2 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #111;
+            margin: 0;
+            position: relative;
+            padding-left: 12px;
+        }
+        .special-3col-header h2::before {
+            content: '|';
+            position: absolute;
+            left: 0;
+            color: #ed1c24;
+            font-weight: 900;
+        }
+        .special-feature {
+            display: block;
+            margin-bottom: 12px;
+        }
+        .special-feature img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .special-feature-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #111;
+            margin: 0;
+        }
+        .special-feature-title a { color: #111; }
+        .special-feature-title a:hover { color: #ed1c24; }
+
+        .special-sub-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 10px;
+            flex-grow: 1;
+        }
+        .special-sub-list li {
+            position: relative;
+            padding: 8px 0 8px 16px;
+            border-bottom: 1px solid #f1f1f1;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .special-sub-list li:last-child { border-bottom: none; }
+        .special-sub-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: #cfcfcf;
+            border-radius: 50%;
+        }
+        .special-sub-list li a { color: #222; }
+        .special-sub-list li a:hover { color: #ed1c24; }
+
+        .special-more-btn {
+            display: block;
+            text-align: center;
+            background: #f7f7f7;
+            color: #ed1c24;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: auto;
+        }
+        .special-more-btn:hover { background: #ed1c24; color: #fff; }
+
+/* ============ 2-COLUMN NEWS SECTION (NEW) ============ */
+.news-2col-wrapper {
+    max-width: 1200px;
+    margin: 25px auto 0;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.news-2col-box {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 15px 18px 18px;
+    display: flex;
+    flex-direction: column;
+}
+.news-2col-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.news-2col-header h2 {
+    font-size: 22px;
+    font-weight: 700;   /* ← 800 থেকে 700 করা হয়েছে, বাকি সেকশনের মতো */
+    color: #111;
+    margin: 0;
+    position: relative;
+    padding-left: 12px;
+    /* font-family সরিয়ে দেওয়া হয়েছে — এখন body থেকে ইনহেরিট করবে */
+}
+.news-2col-header h2::before {
+    content: '|';
+    position: absolute;
+    left: 0;
+    color: #ed1c24;
+    font-weight: 900;
+    font-size: 24px;
+    top: -2px;
+}
+.news-see-more {
+    color: #ed1c24;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    transition: transform 0.3s;
+}
+.news-see-more:hover {
+    transform: translateX(5px);
+}
+.news-2col-content {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 15px;
+    flex-grow: 1;
+}
+.news-main-item {
+    display: flex;
+    flex-direction: column;
+}
+.news-main-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: block;
+}
+.news-main-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #111;
+    margin: 0 0 8px;
+    /* font-family সরানো হয়েছে */
+}
+.news-main-title a { color: #111; }
+.news-main-title a:hover { color: #ed1c24; }
+.news-main-excerpt {
+    font-size: 14px;
+    color: #555;
+    line-height: 22px;
+    margin: 0;
+    /* font-family সরানো হয়েছে */
+}
+.news-side-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.news-side-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.news-side-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.news-side-item img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    display: block;
+}
+.news-side-item p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #222;
+    margin: 0;
+    /* font-family সরানো হয়েছে */
+}
+.news-side-item p a { color: #222; }
+.news-side-item p a:hover { color: #ed1c24; }
+
+/* ============ দক্ষিণ-পশ্চিম সেকশন ============ */
+.dakshin-poshchim-wrapper {
+    max-width: 1200px;
+    margin: 25px auto 0;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 300px; /* বাম দিকে বড়, ডানে ছোট */
+    gap: 25px;
+}
+.dakshin-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.dakshin-card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.dakshin-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+.dakshin-card-title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 10px;
+    margin: 0;
+    color: #222;
+}
+.dakshin-card-title a { color: #222; }
+.dakshin-card-title a:hover { color: #ed1c24; }
+
+/* ============ অপরাধ ও বিচার বক্স ============ */
+.aporadh-news-box {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.aporadh-news-header {
+    background: #8B0000;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.aporadh-news-content {
+    padding: 12px 15px;
+}
+.aporadh-news-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+    align-items: flex-start;
+}
+.aporadh-news-item:last-child { border-bottom: none; padding-bottom: 0; }
+.aporadh-news-item img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+.aporadh-news-item .aporadh-news-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #222;
+    margin: 0;
+}
+.aporadh-news-item .aporadh-news-title a { color: #222; }
+.aporadh-news-item .aporadh-news-title a:hover { color: #ed1c24; }
+
+@media (max-width: 992px) {
+    .dakshin-poshchim-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .dakshin-poshchim-wrapper .dakshin-main {
+        order: 1;
+    }
+    .dakshin-poshchim-wrapper .aporadh-news-box {
+        order: 2;
+    }
+
+    /* 👇 মোবাইল/ট্যাবলেটে ২টা করে কার্ড */
+    .dakshin-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+    }
+}
