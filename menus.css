@@ -1,4 +1,20 @@
-        /* ============ Dropdown Menu ============ */
+        /* ============ Navigation ============ */
+        .navigation_bar {
+            border-top: 1px solid #ddd;
+            border-bottom: 3px solid #ed1c24;
+            background: #fff; z-index: 999;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #000; font-weight: 700;
+            padding: 10px 15px !important;
+            border-right: 1px solid #eee;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            background: #ed1c24; color: #fff !important;
+        }
+
+
+/* ============ Dropdown Menu ============ */
 .navigation_bar .navbar-nav .nav-item.dropdown { position: relative; }
 .navigation_bar .navbar-nav .dropdown-menu {
     border: none !important;
